@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// React Element
-
-const heading = (<h1 id="heading">Namaste React using JSX</h1>);
+const Title = ()=>{return ( <h1 id="heading">Namaste React using JSX</h1>)};
 
 //React funtional component
 
-const HeaderComponent = ()=>{
-  return <h1 className="heading">React 101</h1>
-};
-
-const HeaderComponent2 = ()=> <h1 className="heading">React 101</h1>;
+const HeaderComponent = ()=> (
+<div className="container">
+  {Title()}
+  <Title></Title>
+  <Title/>
+<h1 className="heading">React 101</h1>
+</div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(<HeaderComponent/>);
