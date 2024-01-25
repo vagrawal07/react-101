@@ -12,6 +12,10 @@ const heading = React.createElement("div", { id: "parent" }, [
   ]),
 ]);
 
+//JSX - HTML-like or XML-like syntax
+
+const jsxHeading = (<h1 id="heading">Namaste React using JSX</h1>);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(jsxHeading);
