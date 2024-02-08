@@ -10,7 +10,7 @@ const HeaderComponent = ()=> (
   {Title()}
   <Title></Title>
   <Title/>
-<h1 className="heading">React 101</h1>
+<h1 className="heading">React Component Build</h1>
 </div>
 );
 
