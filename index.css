@@ -11,6 +11,7 @@
 
 .nav-items{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -41,4 +42,29 @@
 
 .cuisines-list{
     word-wrap: break-word;
+}
+
+.filter-btn{
+    cursor: pointer;
+    margin: 5px;
+    padding: 4px;
+}
+
+.shimmer-card{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-btn{
+    background-color: #f0f0f0;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
 }
