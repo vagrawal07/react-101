@@ -1,6 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { RES_API } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   //Local State Variable - Super powerful variable
@@ -16,7 +18,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
+      RES_API
     );
 
     const json = await data.json();
@@ -87,7 +89,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {resFilterList.map((restaurant) => (   
-          <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
+         <Link  key={restaurant?.info?.id} to={"/restaurant/"+restaurant?.info?.id}> <RestaurantCard resData={restaurant} /> </Link>
         ))}
       </div>
     </div>
