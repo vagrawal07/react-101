@@ -4,7 +4,7 @@ const RestaurantCard = ({resData})=>{
 
     const {cloudinaryImageId,cuisines,avgRating,name,costForTwo,sla} = resData?.info;
 
-    console.log(resData?.info);
+    // console.log(resData?.info);
 
     return (
         <div className="res-card">
