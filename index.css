@@ -77,3 +77,8 @@
     padding: 10px;
     border: 2px solid black;
 }
+
+.about-image{
+    width: 200px;
+    height: 200px;
+}
