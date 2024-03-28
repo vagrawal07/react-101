@@ -29,7 +29,7 @@ const RestaurantMenu = () => {
 const { name, cuisines, costForTwoMessage } = index !== -1 ? resInfo?.cards[index]?.card?.card?.info : {};
 
 
-    const menuIndex = resInfo?.cards.findIndex(card => card?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card !== undefined);
+    const menuIndex = resInfo?.cards.findIndex(card => card?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards !== undefined);
     const { itemCards } = menuIndex !== -1 ? resInfo?.cards[menuIndex]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card : {};
     
 
